@@ -22,7 +22,6 @@
   }
  
   .nav {
-    width: 800px;
     margin: 20px auto;
     max-width: 50em;
     background: #faffd8;
@@ -72,6 +71,10 @@
   .purple.is-active{
     background: #ec99ff;
   }
+  .pink.is-active{
+    background: #ffb7e0;
+  }
+
   .red.selected {
     background: #ff614c;
   }
@@ -87,6 +90,10 @@
   .purple.selected{
     background: #ec99ff;
   }
+  .pink.selected{
+    background: #ffb7e0;
+  }
+
   .info {
     margin-top: 40px;
     text-align: center;

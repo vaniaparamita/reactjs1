@@ -33,6 +33,10 @@ const items = [
     {
         name: 'Calculator',
         color : 'purple',
+    },
+    {
+        name: 'Profile',
+        color : 'pink',
     }
 
 ];

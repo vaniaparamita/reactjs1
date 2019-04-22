@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 //import logo from './logo.svg';
 import './App.css';
+import Profile from './Profile.js';
 
-class App extends React.Component {
+class App extends Component {
   constructor(props){
     super(props);
 
@@ -97,6 +98,11 @@ class App extends React.Component {
       )
       
     }
+
+    else if(name === 'Profile'){
+      return <Profile/>;
+    }
+
     else{
       return(
       <div>
