@@ -13,7 +13,7 @@ const items = [
            
     },
     {   
-        name: 'Spongebob Peer',
+        name: 'Spongebob Pear',
         color : 'yellow',
         img : 'yellow.jpg',
         img2 : 'three.png'   

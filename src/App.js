@@ -29,10 +29,10 @@ class App extends Component {
 
   info(name){
     if(name === "Calculator"){
-      return <Calculator/>
+      return <Calculator coba={this.state}/>
     }
     else if(name === 'Profile'){
-      return <Profile/>;
+      return <Profile nama="Nyoba nyoba"/>;
     }
 
     else{

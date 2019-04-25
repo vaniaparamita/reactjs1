@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 
 class Calculator extends Component {
     constructor(props){
@@ -57,7 +56,7 @@ class Calculator extends Component {
     render(){
       return(
         <div>
-           This is <span className={"selected "+this.state.color}>{this.state.name}</span>
+           This is <span className={"selected "+this.props.coba.color}>{this.props.coba.name}</span>
               <br></br>
               <br></br>
             <form onSubmit={this.handleSubmit.bind(this)}>
@@ -66,9 +65,9 @@ class Calculator extends Component {
                     <option value="+">+</option>
                     <option value="-">-</option>
                     <option value="*">*</option>
-                    <option value="/">/"</option>
+                    <option value="/">/</option>
                   </select>
-            <input type="number" ref="nilai2"></input> =...
+            <input type="number" ref="nilai2"></input> = 
             <br></br>
             <br></br>
             <button className="btn btn-primary">Count Me</button>

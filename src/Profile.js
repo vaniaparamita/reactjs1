@@ -8,7 +8,11 @@ class Profile extends Component {
   }
   render(){
     return(
-    <img src="two.jpg"></img> 
+    <div>
+         <p>{this.props.nama}</p>
+         <img src="two.jpg"></img> 
+    </div>
+      
     ); 
 }}
 export default Profile;    
