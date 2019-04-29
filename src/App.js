@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import Profile from './Profile.js';
 import Calculator from './Calculator.js';
-
+import toast from 'toasted-notes' 
+import 'toasted-notes/src/styles.css';
 class App extends Component {
   constructor(props){
     super(props);
@@ -14,7 +15,8 @@ class App extends Component {
       color : 'grey',
       img : 'Home.jpg',
       img2 : 'home.png',
-    }
+    };
+    toast.notify('Hello Vania World!')
   }
 
   clicked(menu) {
