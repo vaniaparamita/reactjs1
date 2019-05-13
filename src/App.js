@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-//import logo from './logo.svg';
 import './App.css';
 import Profile from './Profile.js';
 import Calculator from './Calculator.js';
-import toast from 'toasted-notes' 
+import Home from './Home.js';
+import toast from 'toasted-notes'; 
 import 'toasted-notes/src/styles.css';
+
 class App extends Component {
   constructor(props){
     super(props);
@@ -35,6 +35,9 @@ class App extends Component {
     }
     else if(name === 'Profile'){
       return <Profile nama="Nyoba nyoba"/>;
+    }
+    else if(name === 'Home'){
+      return <Home test={this.state} />;
     }
 
     else{
