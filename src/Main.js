@@ -5,6 +5,7 @@ import Male from "./Male";
 import Female from "./Female";
 import './style.css';
 import Australia from "./Australia.js";
+import America from "./America";
 class Main extends Component {
     render(){
         return(
@@ -17,6 +18,7 @@ class Main extends Component {
                         <li><NavLink exact to="/male">Male</NavLink></li>
                         <li><NavLink exact to="/female">Female</NavLink></li>
                         <li><NavLink exact to="/australia">Australia</NavLink></li>
+                        <li><NavLink exact to="america">America</NavLink></li>
                     </ul>
                     </nav>
                     <div className="content">
@@ -24,6 +26,7 @@ class Main extends Component {
                         <Route exact path="/male" component={Male}/>
                         <Route exact path="/female" component={Female}/>
                         <Route exact path="/australia" component={Australia}/>
+                        <Route exact path="/america" component={America}/>
                     </div>
                 </div>
                 </HashRouter>
