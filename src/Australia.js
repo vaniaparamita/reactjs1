@@ -1,5 +1,7 @@
 import React, {Component} from "react";
-class Home extends Component {
+
+
+class Australia extends Component {
     constructor(props){
         super(props);
         this.state={
@@ -7,15 +9,16 @@ class Home extends Component {
         };
     }
     componentDidMount(){
-        fetch("https://randomuser.me/api/?results=10")
+        fetch("https://randomuser.me/api/?nat=au&results=10")
         .then(res=> res.json())
         .then(parsedJSON => parsedJSON.results.map(data=>(
             {
                 id: `${data.id.name}`,
                 firstName: `${data.name.first}`,
                 LastName: `${data.name.last}`,
-                location: `${data.location.state}, ${data.nat}`,
-                thumbnail: `${data.picture.large}`
+                email: `${data.email}`,
+                thumbnail: `${data.picture.large}`,
+                login: `${data.login.username} ${data.login.password}`
             }
         )))
         .then(items => this.setState(
@@ -32,13 +35,14 @@ class Home extends Component {
                 <div className="boxWhite">
                 {
                     items.length > 0 ? items.map(item => {
-                        const {id, firstName, LastName, location, thumbnail} = item;
+                        const {id, firstName, LastName, email, thumbnail, login} = item;
                         return(
                             <div key={id} className="bgCircle">
                             <center><img src={thumbnail} alt={firstName} className="circle"/></center><br />
                             <div className="ctr">
                                 {firstName} {LastName} <br/ >
-                                {location}
+                                {email} <br/ >
+                                {login}
                             </div>
                      </div>
                         )
@@ -49,4 +53,4 @@ class Home extends Component {
         
     }
 }
-export default Home;
+export default Australia;

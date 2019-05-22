@@ -23,12 +23,13 @@
  
   .nav {
     margin: 20px auto;
-    max-width: 50em;
+    max-width: 100em;
     background: #faffd8;
     border: 1px solid #333;
     border-left: none;
     border-right: none;
     text-align: center;
+    font-size: 18px;
   }
  
   .menu {
@@ -74,6 +75,10 @@
   .pink.is-active{
     background: #ffb7e0;
   }
+  
+  .darkpink.is-active{
+    background: #ff66b7;
+  }
 
   .red.selected {
     background: #ff614c;
@@ -92,6 +97,9 @@
   }
   .pink.selected{
     background: #ffb7e0;
+  }
+  .darkpink.selected{
+    background: #ff66b7;
   }
 
   .info {

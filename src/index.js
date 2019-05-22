@@ -39,10 +39,9 @@ const items = [
         color : 'pink',
     },
     {
-        name: 'Home',
-        color : 'pink',
+        name: 'Main',
+        color : 'darkpink',
     }
-
 ];
 
 ReactDOM.render(<App items={items}/>, 

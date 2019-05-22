@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import Profile from './Profile.js';
 import Calculator from './Calculator.js';
-import Home from './Home.js';
+import Main from './Main';
+import Male from './Male';
+import Australia from './Australia';
 import toast from 'toasted-notes'; 
 import 'toasted-notes/src/styles.css';
 
@@ -36,8 +38,14 @@ class App extends Component {
     else if(name === 'Profile'){
       return <Profile nama="Nyoba nyoba"/>;
     }
-    else if(name === 'Home'){
-      return <Home test={this.state} />;
+    else if(name === 'Main'){
+      return <Main test={this.state} />;
+    }
+    else if(name === 'Male'){
+      return <Male test={this.state} />;
+    }
+    else if(name === 'Australia'){
+      return <Australia test={this.state} />;
     }
 
     else{
