@@ -3,8 +3,6 @@ import './App.css';
 import Profile from './Profile.js';
 import Calculator from './Calculator.js';
 import Main from './Main';
-import Male from './Male';
-import Australia from './Australia';
 import toast from 'toasted-notes'; 
 import 'toasted-notes/src/styles.css';
 
@@ -40,12 +38,6 @@ class App extends Component {
     }
     else if(name === 'Main'){
       return <Main test={this.state} />;
-    }
-    else if(name === 'Male'){
-      return <Male test={this.state} />;
-    }
-    else if(name === 'Australia'){
-      return <Australia test={this.state} />;
     }
 
     else{

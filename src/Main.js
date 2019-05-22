@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 import {Route, NavLink, HashRouter} from "react-router-dom";
-import Home from "./Home.js";
-import Male from "./Male";
-import Female from "./Female";
+import Home from "./data/Home.js";
+import Male from "./data/Male";
+import Female from "./data/Female";
 import './style.css';
-import Australia from "./Australia.js";
-import America from "./America";
+import Australia from "./data/Australia";
+import America from "./data/America";
 class Main extends Component {
     render(){
         return(
